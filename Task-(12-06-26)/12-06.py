@@ -1,0 +1,11 @@
+n=153
+m=n
+lenth=len(str(n))
+sum=0
+while(n>0):
+    power=lenth
+    temp=n%10
+    power=temp**lenth
+    n//=10
+    sum+=power
+print(sum==m)
